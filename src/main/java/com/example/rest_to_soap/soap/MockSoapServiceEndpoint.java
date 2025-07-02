@@ -5,7 +5,7 @@ import jakarta.jws.WebService;
 
 @WebService
 public interface MockSoapServiceEndpoint {
-
     @WebMethod
-    String receiveMessage(String message);
+    String registerPlan(String mobileNumber, String planName, int dataAllowance, int sms, int voice);
+
 }
